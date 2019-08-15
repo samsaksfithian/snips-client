@@ -1,5 +1,9 @@
 body,
-ul {
+ul,
+h1,
+h2,
+p,
+pre {
   margin: 0;
   padding: 0;
 }

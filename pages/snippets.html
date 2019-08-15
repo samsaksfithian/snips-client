@@ -6,17 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Snippets</title>
 
-    <script defer src="../index.js"></script>
+    <!-- highlightjs -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/shades-of-purple.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <!-- end -->
+
+    <!-- he.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.min.js"></script>
+    <!-- end -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer type="module" src="../index.js"></script>
   </head>
   <body>
     <section id="snippets">
-      <h1>Snippets</h1>
-      <h2>Read away!</h2>
       <!-- This is where snippets will go -->
-    </section>
+      <div class="snip">
+        <div class="text">
+          <h2>comment.js</h2>
+          <p>A single line comment</p>
+        </div>
+        <pre><code>// JavaScript is fun</code></pre>
+      </div>
 
-    <button onclick="survey()" onmouseenter="aggressiveButton(this)">
-      Answer survey
-    </button>
+      <div class="snip">
+        <div class="text">
+          <h2>comment2.js</h2>
+          <p>A multi line comment</p>
+        </div>
+        <pre><code>/* JavaScript is fun */</code></pre>
+      </div>
+    </section>
   </body>
 </html>

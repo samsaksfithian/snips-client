@@ -1,3 +1,7 @@
+:root {
+  --corner: 8px;
+}
+
 #snippets {
   display: flex;
   flex-direction: column;
@@ -10,9 +14,15 @@
   max-width: 600px;
   margin: 1rem 0;
   background-color: #f0f0f0;
-  border: 1px solid darkblue;
-  border-radius: 8px;
+  border-radius: var(--corner);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.snip .text {
+  border: 1px solid darkblue;
+  border-bottom: 0px;
+  border-radius: var(--corner) var(--corner) 0 0;
+  padding: 1rem;
 }
 
 .snip h2 {
@@ -20,17 +30,11 @@
 }
 
 .snip p {
-  /* margin-bottom: 1rem; */
   color: rgba(0, 0, 0, 0.75);
 }
 
-.snip .text {
-  padding: 1rem;
-  /* padding-bottom: 0; */
-}
-
 .snip pre code {
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 var(--corner) var(--corner);
   padding: 0.75rem;
 }
 

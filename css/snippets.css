@@ -1,8 +1,5 @@
-:root {
-  --corner: 8px;
-}
-
 #snippets {
+  --corner: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;

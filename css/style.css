@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 @import 'resets.css';
+@import 'palette.css';
 @import 'header.css';
 @import 'hero.css';
+@import 'search.css';
 @import 'snippets.css';
 
 html {

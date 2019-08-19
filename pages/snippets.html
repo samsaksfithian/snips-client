@@ -22,23 +22,13 @@
     <script defer type="module" src="../index.js"></script>
   </head>
   <body>
+    <form action="" id="search-bar" onsubmit="search()">
+      <label for="search-text">🔎</label>
+      <input type="text" name="search-text" id="search-text" placeholder="Search..." />
+      <button type="submit">Search</button>
+    </form>
     <section id="snippets">
       <!-- This is where snippets will go -->
-      <div class="snip">
-        <div class="text">
-          <h2>comment.js</h2>
-          <p>A single line comment</p>
-        </div>
-        <pre><code>// JavaScript is fun</code></pre>
-      </div>
-
-      <div class="snip">
-        <div class="text">
-          <h2>comment2.js</h2>
-          <p>A multi line comment</p>
-        </div>
-        <pre><code>/* JavaScript is fun */</code></pre>
-      </div>
     </section>
   </body>
 </html>
